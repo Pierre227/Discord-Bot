@@ -53,7 +53,7 @@ async def tracking():
 async def tracking_user(username, tag):
     rank = get_rank(username, tag)
     if rank and rank!=records[username+'#'+tag]:
-        target_channel = bot.get_channel(1199724132015804419)
+        target_channel = bot.get_channel(700315670751084586)
         await target_channel.send(f":rotating_light: {username} went from : {records[username+'#'+tag][0]} {records[username+'#'+tag][1]} {records[username+'#'+tag][2]} lp to {rank[0]} {rank[1]} {rank[2]} lp. He won {rank[3] - records[username+'#'+tag][3]} and lost {rank[4] - records[username+'#'+tag][4]} games :joy_cat:")
         records[username+'#'+tag] = rank
 
