@@ -42,7 +42,7 @@ async def link(interaction: discord.Interaction, username: str, tag: str):
     else:
         await interaction.response.send_message(f"{interaction.user.mention} NOT FOUND Sadge")
 
-@tasks.loop(hours=1)
+@tasks.loop(hours=4)
 async def tracking():
     print("Tracking !")
     await tracking_user('Eclow', 'EUW')
